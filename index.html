@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Database Viewer</title>
+</head>
+<body>
+    
+    <div>
+        <label for="searchCategory">Search by:</label>
+        <select id="searchCategory">
+            <option value="barcode">Barcode Number</option>
+            <option value="fir">FIR Number</option>
+            <option value="location">Location</option>
+            <option value="time">Time</option>
+        </select>
+        <input type="text" id="searchInput" placeholder="Enter search term">
+        <button onclick="search()">Search</button>
+    </div>
+    
+    <table id="dataTable">
+        <thead>
+            <tr>
+                <th>Barcode Number</th>
+                <th>FIR Number</th>
+                <th>Location</th>
+                <th>Check-in Time</th>
+                <th>Check-out Time</th>
+            </tr>
+        </thead>
+        <tbody id="dataBody">
+            <!-- Data will be populated here -->
+        </tbody>
+    </table>
+    
+    <script src="script.js"></script>
+</body>
+</html>
